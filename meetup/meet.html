@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>meetup Events</title>
+    <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div class="jumbotron">
+     <div class="container">
+       <h1>NY JAVASCRIPT MEETUPS</h1>
+       <p>A selection of New York Meetups that may interest javascript enthusiasts. Enjoy!</p>
+
+          <h3>Update the results below</h3>
+          <div class="row">
+              <div class="col-md-6">
+                <form>
+                  <fieldset class="form-group">
+                    <label for="zipcode">Location (tired of NY? Look for tech meetups in other places)</label>
+                    <input class="form-control" id="zipcode" placeholder="Enter a Zipcode">
+                  </fieldset>
+              </div>
+
+                <div class="col-md-6">
+                  <fieldset class="form-group">
+                    <label for="searchTerm">Terms (Add an additional search term for better results)</label>
+                    <input class="form-control" id="searchTerm" placeholder="Enter a search term">
+                  </fieldset>
+              </div>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+
+     </div>
+   </div>
+
+   <div class="container">
+       <div id="meetupevents">
+    </div>
+
+    <!-- javascript files -->
+
+    <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+    <!-- Moment.js to convert timestap -->
+    <script src="js/moment.js"></script>
+    <!-- project specific JS files -->
+    <script src="js/index.js"></script>
+
+  </body>
+
+  </html>
